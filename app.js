@@ -550,7 +550,7 @@ function todoItem(t, cat) {
       style: t.done ? `background:${cat.color}` : '',
       onclick: () => updateTodo(t.id, { done: !t.done }),
     }, svg(ICON.check)),
-    h('div', { class: 'todo-text', ondblclick: () => { S.editing = t.id; render(); } }, t.text),
+    h('div', { class: 'todo-text', onclick: () => { S.adding = null; S.editing = t.id; render(); } }, t.text),
     h('button', { class: 'more', title: '더보기', onclick: () => openTodoSheet(t) }, svg(ICON.dots)));
 }
 

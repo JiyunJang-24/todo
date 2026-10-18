@@ -93,7 +93,7 @@ input { font: inherit; color: inherit; }
 }
 .check svg { width: 13px; height: 13px; stroke: #fff; stroke-width: 3.2; fill: none; stroke-linecap: round; stroke-linejoin: round; opacity: 0; }
 .todo.done .check svg { opacity: 1; }
-.todo-text { flex: 1; min-width: 0; word-break: break-word; }
+.todo-text { cursor: text; flex: 1; min-width: 0; word-break: break-word; }
 .todo.done .todo-text { color: var(--sub); }
 .more { flex: none; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; color: #b0b0b5; border-radius: 8px; }
 .more svg { width: 18px; height: 18px; fill: currentColor; }
